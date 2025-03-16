@@ -1,86 +1,56 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "explicit"
-    },
+    // Spelling
     "cSpell.words": [
-		"bspwm",
-		"cairographics",
-		"callout",
-		"callouts",
-		"classnet",
-		"commitlint",
-		"createreactapp",
-		"deno",
-		"devenv",
-		"direnv",
-		"dompurify",
-		"elasticlunr",
-		"Exyle",
-		"exyleio",
-		"fnref",
-		"Fontawesome",
-		"Fonticons",
-		"fontsource",
-		"fortawesome",
-		"Freedesktop",
-		"GDSC",
-		"githubactions",
-		"githubpages",
-		"gnubash",
-		"godotengine",
-		"heroicon",
-		"hongik",
-		"hoofd",
-		"inqling",
-		"Jimin",
-		"katex",
-		"kunukn",
-		"Librewolf",
-		"microflash",
-		"nixpkgs",
-		"nodedotjs",
-		"nojs",
-		"noopener",
-		"noto",
-		"planetscale",
-		"pnpm",
-		"pocketbase",
-		"polybar",
-		"Pomky",
-		"pompup",
-		"pompy",
-		"pompydev",
-		"precompress",
-		"rainmeter",
-		"rehype",
-		"statcounter",
-		"supersub",
-		"sxhkd",
-		"tailwindcss",
-		"tauri",
-		"texmath",
-		"tinycolor",
-		"tsup",
-		"Turborepo",
-		"umami",
-		"ungoogled",
-		"unixporn",
-		"wbtimeline",
-		"webassembly",
-		"wouter",
-		"YYYYMMDD",
-		"zustand"
-	],
+        "callout",
+        "callouts",
+        "commitlint",
+        "deno",
+        "devenv",
+        "direnv",
+        "dompurify",
+        "elasticlunr",
+        "fnref",
+        "Fontawesome",
+        "Fonticons",
+        "fontsource",
+        "fortawesome",
+        "inqling",
+        "katex",
+        "kunukn",
+        "microflash",
+        "nixd",
+        "nixfmt",
+        "nixpkgs",
+        "nojs",
+        "noopener",
+        "noto",
+        "pkgs",
+        "pnpm",
+        "pompy",
+        "pompydev",
+        "rehype",
+        "supersub",
+        "tailwindcss",
+        "tsup",
+        "Turborepo",
+        "umami",
+        "YYYYMMDD",
+        "zustand"
+    ],
 
+    // Nix
     "nix.formatterPath": "nixfmt",
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nixd",
+    "[nix]": {
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
 
+    // Formatting & Linting
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
     "eslint.workingDirectories": [{ "mode": "auto" }],
     "eslint.validate": [
         "javascript",
@@ -90,9 +60,22 @@
         "svelte"
     ],
 
+    // TS/JS
     "typescript.tsdk": "node_modules/typescript/lib",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-    // prevent tailwind-related warnings
+    // Tailwind
     "css.lint.unknownAtRules": "ignore",
     "less.lint.unknownAtRules": "ignore",
     "scss.lint.unknownAtRules": "ignore",
@@ -100,7 +83,7 @@
     // https://github.com/tailwindlabs/tailwindcss-intellisense#tailwindcssclassattributes
     "tailwindCSS.classAttributes": ["class", "className", ".*Styles*"],
 
-    // file format settings
+    // misc. formatter settings
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -110,28 +93,13 @@
     "[svg]": {
         "editor.defaultFormatter": "jock.svg"
     },
-    "[dotenv]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
     },
     "[svelte]": {
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
-    "[ignore]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[nix]": {
-        "editor.defaultFormatter": "jnoortheen.nix-ide"
     }
 }
