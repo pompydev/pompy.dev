@@ -25,7 +25,7 @@
     # https://devenv.sh/supported-languages/javascript
     javascript = {
       enable = true;
-      package = pkgs.nodejs_20;
+      package = pkgs.nodejs_22;
 
       pnpm = {
         enable = true;
