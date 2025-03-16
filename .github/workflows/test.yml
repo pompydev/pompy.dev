@@ -35,8 +35,8 @@ jobs:
         uses: dtinth/setup-github-actions-caching-for-turbo@v1
 
       - run: pnpm build
-
-      - run: devenv test
+      - run: pnpm test:unit
+      - run: pnpm test:e2e
 
       - uses: actions/upload-artifact@v4
         with:

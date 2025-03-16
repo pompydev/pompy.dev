@@ -16,11 +16,6 @@
     PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = true;
   };
 
-  enterTest = ''
-    pnpm test:unit
-    pnpm test:e2e
-  '';
-
   languages = {
     # https://devenv.sh/supported-languages/javascript
     javascript = {
