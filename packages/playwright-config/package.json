@@ -4,6 +4,6 @@
     "type": "module",
     "main": "index.ts",
     "devDependencies": {
-        "@playwright/test": "1.47.0"
+        "@playwright/test": "1.50.1"
     }
 }
