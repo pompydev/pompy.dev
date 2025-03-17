@@ -23,6 +23,7 @@
         "nojs",
         "noopener",
         "noto",
+        "nuxt",
         "pkgs",
         "pnpm",
         "pompy",
@@ -71,6 +72,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 

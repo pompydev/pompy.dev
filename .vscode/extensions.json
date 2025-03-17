@@ -8,6 +8,7 @@
         "bradlc.vscode-tailwindcss",
         "unifiedjs.vscode-mdx",
         "svelte.svelte-vscode",
+        "Vue.volar",
         "redhat.vscode-xml",
         "github.vscode-github-actions",
         "editorconfig.editorconfig",
