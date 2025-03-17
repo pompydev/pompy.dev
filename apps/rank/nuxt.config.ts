@@ -5,7 +5,11 @@ export default defineNuxtConfig({
     compatibilityDate: "2024-11-01",
     devServer: { port: 3001 },
     devtools: { enabled: true },
-    modules: ["@nuxtjs/color-mode", "@nuxtjs/tailwindcss"],
+    modules: [
+        "@nuxtjs/color-mode",
+        "@nuxtjs/tailwindcss",
+        "@nuxtjs/google-fonts",
+    ],
     app: {
         head: {
             title, // default fallback title
@@ -19,5 +23,12 @@ export default defineNuxtConfig({
     // https://color-mode.nuxtjs.org/#configuration
     colorMode: {
         classSuffix: "",
+    },
+
+    // https://google-fonts.nuxtjs.org/getting-started/options
+    googleFonts: {
+        families: {
+            "Noto Sans KR": true,
+        },
     },
 })
