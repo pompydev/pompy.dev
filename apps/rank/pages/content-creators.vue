@@ -5,6 +5,6 @@ useHead({
 </script>
 
 <template>
-    <h1>Content creators ranking</h1>
-    <NuxtLink href="/">Back</NuxtLink>
+    <h1 class="text-4xl font-black">Content creators ranking</h1>
+    <NuxtLink href="/" class="underline">Back</NuxtLink>
 </template>
