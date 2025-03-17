@@ -22,6 +22,7 @@ export default defineNuxtConfig({
 
     // https://color-mode.nuxtjs.org/#configuration
     colorMode: {
+        // default is "-mode". Without this, tailwind dark mode won't work.
         classSuffix: "",
     },
 
