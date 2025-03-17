@@ -32,6 +32,7 @@
         "rehype",
         "supersub",
         "tailwindcss",
+        "tanstack",
         "tsup",
         "Turborepo",
         "umami",
