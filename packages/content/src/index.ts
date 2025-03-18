@@ -35,7 +35,7 @@ async function main() {
     try {
         fs.rmSync(outPath, { recursive: true })
         // eslint-disable-next-line no-empty
-    } catch (err) {}
+    } catch {}
 
     /**
      * Checking

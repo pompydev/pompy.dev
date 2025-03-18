@@ -30,7 +30,7 @@ export async function getData(params: Params): Promise<Data> {
 export async function fetchContent(contentID: string) {
     try {
         return await import(`@pompydev/content/dist/content${contentID}.json`)
-    } catch (err) {
+    } catch {
         return
     }
 }
