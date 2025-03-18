@@ -34,6 +34,7 @@ jobs:
       - name: Cache turbo build
         uses: dtinth/setup-github-actions-caching-for-turbo@v1
 
+      - run: pnpm install
       - run: pnpm lint
       - run: pnpm build
       - run: pnpm test:unit

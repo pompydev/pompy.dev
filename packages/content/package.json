@@ -9,8 +9,6 @@
         "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo build dist node_modules"
     },
     "dependencies": {
-        "@pompydev/eslint-config": "workspace:*",
-        "@pompydev/prettier-config": "workspace:*",
         "@microflash/remark-callout-directives": "^4.1.0",
         "@types/dompurify": "^3.0.5",
         "@types/elasticlunr": "^0.9.9",
