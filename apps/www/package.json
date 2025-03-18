@@ -12,6 +12,9 @@
         "test:e2e": "playwright test",
         "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo .svelte-kit test-results build node_modules vite.config.ts.timestamp-*"
     },
+    "dependencies": {
+        "@sveltejs/vite-plugin-svelte": "^3.1.0"
+    },
     "devDependencies": {
         "@fontsource/noto-sans-kr": "^5.0.5",
         "@inqling/svelte-icons": "^3.5.0",
@@ -22,7 +25,6 @@
         "@pompydev/tailwind-config": "workspace:*",
         "@sveltejs/adapter-static": "^3.0.5",
         "@sveltejs/kit": "^2.5.7",
-        "@sveltejs/vite-plugin-svelte": "^3.1.0",
         "@types/jest": "^29.5.12",
         "autoprefixer": "^10.4.16",
         "dayjs": "^1.11.10",

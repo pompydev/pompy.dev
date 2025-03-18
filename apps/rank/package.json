@@ -14,14 +14,15 @@
         "@nuxt/icon": "1.11.0",
         "@nuxtjs/color-mode": "3.5.2",
         "@nuxtjs/google-fonts": "3.2.0",
-        "@pompydev/prettier-config": "workspace:*",
-        "@pompydev/tailwind-config": "workspace:*",
         "@tanstack/vue-table": "8.21.2",
         "nuxt": "3.16.0",
         "vue": "3.5.13",
         "vue-router": "4.5.0"
     },
     "devDependencies": {
+        "@pompydev/eslint-config": "workspace:*",
+        "@pompydev/prettier-config": "workspace:*",
+        "@pompydev/tailwind-config": "workspace:*",
         "@nuxtjs/tailwindcss": "6.13.2",
         "prettier-plugin-tailwindcss": "0.6.11"
     }
