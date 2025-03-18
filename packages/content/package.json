@@ -4,8 +4,8 @@
     "type": "module",
     "scripts": {
         "dev": "nodemon -e md --watch markdown --exec pnpm build",
+        "lint": "oxlint && eslint .",
         "build": "rm -rf dist build && tsup && node build/index.js",
-        "lint": "eslint .",
         "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo build dist node_modules"
     },
     "dependencies": {
@@ -21,7 +21,6 @@
         "@types/rss": "^0.0.32",
         "@types/tinycolor2": "^1.4.6",
         "elasticlunr": "^0.9.5",
-        "eslint": "^8.56.0",
         "gray-matter": "^4.0.3",
         "jsdom": "^24.0.0",
         "markdown-toc": "^1.2.0",

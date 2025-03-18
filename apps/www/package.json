@@ -6,11 +6,11 @@
     "scripts": {
         "dev": "vite dev",
         "dev:headless": "vite dev --no-open",
+        "lint": "oxlint && eslint .",
         "build": "vite build",
         "test:unit": "TZ=UTC jest",
         "test:e2e": "playwright test",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo .svelte-kit test-results build node_modules vite.config.ts.timestamp-*",
-        "lint": "eslint ."
+        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo .svelte-kit test-results build node_modules vite.config.ts.timestamp-*"
     },
     "devDependencies": {
         "@pompydev/eslint-config": "workspace:*",
@@ -28,7 +28,6 @@
         "@typescript-eslint/parser": "^6.15.0",
         "autoprefixer": "^10.4.16",
         "dayjs": "^1.11.10",
-        "eslint": "^8.56.0",
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-simple-import-sort": "^10.0.0",
         "eslint-plugin-svelte": "^2.38.0",
