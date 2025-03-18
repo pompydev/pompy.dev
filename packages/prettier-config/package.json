@@ -1,5 +1,8 @@
 {
     "name": "@pompydev/prettier-config",
     "version": "0.0.0",
-    "main": "index.json"
+    "main": "index.json",
+    "devDependencies": {
+        "prettier": "3.5.3"
+    }
 }

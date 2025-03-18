@@ -9,7 +9,6 @@
         "i_am_sure_i_want_to_nuke_gitignored_files": "turbo run i_am_sure_i_want_to_nuke_gitignored_files && rm -rf node_modules .turbo .devenv .direnv .devenv.flake.nix"
     },
     "devDependencies": {
-        "prettier": "3.5.3",
         "turbo": "^1.13.3"
     },
     "engines": {

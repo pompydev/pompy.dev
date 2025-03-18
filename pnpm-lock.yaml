@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      prettier:
-        specifier: 3.5.3
-        version: 3.5.3
       turbo:
         specifier: ^1.13.3
         version: 1.13.3
@@ -431,7 +428,11 @@ importers:
         specifier: 1.50.1
         version: 1.50.1
 
-  packages/prettier-config: {}
+  packages/prettier-config:
+    devDependencies:
+      prettier:
+        specifier: 3.5.3
+        version: 3.5.3
 
   packages/tailwind-config:
     devDependencies:
