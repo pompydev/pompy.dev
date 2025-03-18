@@ -23,7 +23,7 @@ export function createConfig(config: Config): PlaywrightTestConfig {
             command: "pnpm dev:headless",
             url: baseURL,
             timeout: 30 * 1000,
-            // todo: re-enable after updating eslint: eslint-disable-next-line turbo/no-undeclared-env-vars
+            // eslint-disable-next-line turbo/no-undeclared-env-vars
             reuseExistingServer: !process.env.CI,
         },
 

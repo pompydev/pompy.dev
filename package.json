@@ -1,5 +1,6 @@
 {
     "name": "pompydev",
+    "type": "module",
     "private": true,
     "scripts": {
         "dev": "turbo run dev --parallel --continue",

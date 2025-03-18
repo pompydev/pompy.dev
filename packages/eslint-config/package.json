@@ -2,24 +2,20 @@
     "name": "@pompydev/eslint-config",
     "version": "0.0.0",
     "type": "module",
-    "main": ".eslintrc.cjs",
+    "main": "eslint.config.mjs",
     "scripts": {
-        "lint": "oxlint && eslint .eslintrc.cjs",
+        "lint": "oxlint && eslint eslint.config.mjs",
         "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo node_modules"
     },
     "devDependencies": {
-        "@pompydev/prettier-config": "workspace:*",
-        "@typescript-eslint/eslint-plugin": "^6.15.0",
-        "@typescript-eslint/parser": "^6.15.0",
-        "eslint": "8.56.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-config-turbo": "2.4.4",
-        "eslint-plugin-json": "^3.1.0",
+        "@eslint/js": "9.22.0",
+        "eslint": "9.22.0",
+        "eslint-plugin-import": "2.31.0",
         "eslint-plugin-oxlint": "0.16.0",
-        "eslint-plugin-prettier": "^5.1.3",
-        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-simple-import-sort": "12.1.1",
         "eslint-plugin-turbo": "2.4.4",
         "oxlint": "0.16.0",
-        "typescript": "^5.3.3"
+        "typescript": "5.8.2",
+        "typescript-eslint": "^8.26.1"
     }
 }
