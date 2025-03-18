@@ -11,6 +11,7 @@
         "i_am_sure_i_want_to_nuke_gitignored_files": "turbo run i_am_sure_i_want_to_nuke_gitignored_files && rm -rf node_modules .turbo .devenv .direnv .devenv.flake.nix"
     },
     "devDependencies": {
+        "@pompydev/eslint-config": "workspace:*",
         "turbo": "2.4.4"
     },
     "engines": {

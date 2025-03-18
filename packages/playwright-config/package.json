@@ -7,7 +7,6 @@
         "lint": "oxlint && eslint ."
     },
     "devDependencies": {
-        "@pompydev/eslint-config": "workspace:*",
         "@playwright/test": "1.50.1"
     }
 }
