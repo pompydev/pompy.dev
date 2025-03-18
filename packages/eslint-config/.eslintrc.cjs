@@ -8,7 +8,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:oxlint/recommended",
-        "turbo",
+        // "turbo", // todo: re-enable after updating eslint
     ],
     ignorePatterns: ["dist/", "build/"],
     parser: "@typescript-eslint/parser",

@@ -1,4 +1,5 @@
 {
+    "name": "pompydev",
     "private": true,
     "scripts": {
         "dev": "turbo run dev --parallel --continue",
@@ -9,7 +10,7 @@
         "i_am_sure_i_want_to_nuke_gitignored_files": "turbo run i_am_sure_i_want_to_nuke_gitignored_files && rm -rf node_modules .turbo .devenv .direnv .devenv.flake.nix"
     },
     "devDependencies": {
-        "turbo": "^1.13.3"
+        "turbo": "2.4.4"
     },
     "engines": {
         "pnpm": ">=9"
