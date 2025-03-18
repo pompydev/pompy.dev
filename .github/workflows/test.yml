@@ -39,9 +39,3 @@ jobs:
       - run: pnpm build
       - run: pnpm test:unit
       - run: pnpm test:e2e
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: |
-            apps/*/test-results
