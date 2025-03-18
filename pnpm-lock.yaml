@@ -401,12 +401,6 @@ importers:
 
   packages/tailwind-config:
     devDependencies:
-      '@pompydev/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
-      '@pompydev/prettier-config':
-        specifier: workspace:*
-        version: link:../prettier-config
       tailwindcss:
         specifier: ^3.4.0
         version: 3.4.0
