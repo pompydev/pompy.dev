@@ -4,17 +4,17 @@
     "parserOptions": {
         "sourceType": "module",
         "ecmaVersion": 2020,
-        "extraFileExtensions": [".svelte"],
+        "extraFileExtensions": [".svelte"]
     },
     "env": {
         "browser": true,
         "es2017": true,
-        "node": true,
+        "node": true
     },
     "overrides": [
         {
             "files": ["*.svelte"],
-            "parser": "svelte-eslint-parser",
-        },
-    ],
+            "parser": "svelte-eslint-parser"
+        }
+    ]
 }
