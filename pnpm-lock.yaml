@@ -347,6 +347,9 @@ importers:
         specifier: ^11.0.4
         version: 11.0.4
     devDependencies:
+      '@pompydev/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
       nodemon:
         specifier: ^3.1.9
         version: 3.1.9
@@ -386,6 +389,9 @@ importers:
       '@playwright/test':
         specifier: 1.50.1
         version: 1.50.1
+      '@pompydev/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
 
   packages/prettier-config:
     devDependencies:
@@ -395,6 +401,9 @@ importers:
 
   packages/tailwind-config:
     devDependencies:
+      '@pompydev/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
       tailwindcss:
         specifier: ^3.4.0
         version: 3.4.0
