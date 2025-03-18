@@ -13,7 +13,11 @@
             "cache": false
         },
         "test:e2e": {
-            "cache": false
+            "cache": false,
+            "env": [
+                "PLAYWRIGHT_BROWSERS_PATH",
+                "PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS"
+            ]
         },
         "lint": {
             "cache": false
