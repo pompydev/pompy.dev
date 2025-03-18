@@ -38,9 +38,6 @@
     in Seoul, South Korea.
 </span>
 
-<h2 class="mt-16 text-xl font-black">Military service</h2>
-October 2023 ~ April 2025
-
 <div class="mt-10 flex flex-wrap justify-center">
     <a
         class="social-profile"
