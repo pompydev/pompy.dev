@@ -43,7 +43,7 @@ const t = useVueTable({
 </script>
 
 <template>
-    <h1 class="text-4xl font-black">Content creators ranking</h1>
+    <h1 class="text-4xl font-black">pomp's biased and opinionated list of Content creators</h1>
     <NuxtLink href="/" class="underline">Back</NuxtLink>
     <div class="p-2">
         <table class="border">

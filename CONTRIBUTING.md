@@ -29,7 +29,7 @@ pnpm build
 
 - [`apps/www`](./apps/www) - http://localhost:5173
 - [`apps/blog`](./apps/blog) - http://localhost:3000
-- [`apps/rank`](./apps/rank) - http://localhost:3001
+- [`apps/list`](./apps/list) - http://localhost:3001
 
 ```
 pnpm dev

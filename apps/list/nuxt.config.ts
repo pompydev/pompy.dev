@@ -1,4 +1,4 @@
-const title = "pomp's biased & opinionated rankings DB"
+const title = "pomp's biased & opinionated list of ..."
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
