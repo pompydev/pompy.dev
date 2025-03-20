@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const props = defineProps(["highlight"])
+const props = defineProps<{
+    highlight: string
+}>()
 </script>
 
 <template>
