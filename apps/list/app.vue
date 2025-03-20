@@ -24,5 +24,8 @@ body {
 
 * {
     @apply m-0;
+
+    /* https://youtu.be/cH8VbLM1958 */
+    @apply min-h-0 min-w-0;
 }
 </style>
