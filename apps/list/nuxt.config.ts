@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxtjs/google-fonts",
         "@nuxt/icon",
+        "@nuxthub/core",
     ],
     app: {
         head: {
