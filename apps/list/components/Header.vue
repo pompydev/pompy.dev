@@ -3,15 +3,14 @@ const props = defineProps(["highlight"])
 </script>
 
 <template>
-    <div class="slant bg-light-card-bg dark:bg-dark-card-bg">
-        <ThemeController class="mb-10" />
+    <div class="slant mb-12 bg-light-card-bg dark:bg-dark-card-bg">
+        <ThemeController class="h-12" />
 
         <h1
-            class="text-center text-4xl leading-[3rem] text-slate-800 dark:text-slate-200"
+            class="mb-12 text-center text-4xl leading-[3rem] text-slate-800 dark:text-slate-200"
         >
             <span class="font-semibold">pomp</span>'s<br />
-            <span class="">biased</span> &
-            <span class="">opinionated</span>
+            biased & opinionated
             <br />
             list of
             <span
