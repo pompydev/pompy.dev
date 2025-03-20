@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxtjs/google-fonts",
         "@nuxt/icon",
+        "nuxt-umami",
     ],
     app: {
         head: {
@@ -32,5 +33,14 @@ export default defineNuxtConfig({
         families: {
             "Noto Sans KR": true,
         },
+    },
+
+    // https://umami.nuxt.dev/api/configuration
+    umami: {
+        id: "deb8f91b-5fe5-4082-ab35-de3c0e8f84fc",
+        host: "https://umami.pompy.dev",
+        autoTrack: true,
+        ignoreLocalhost: true,
+        domains: ["list.pompy.dev"],
     },
 })

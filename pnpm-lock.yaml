@@ -134,6 +134,9 @@ importers:
       nuxt:
         specifier: 3.16.0
         version: 3.16.0(@parcel/watcher@2.5.1)(@types/node@20.12.7)(db0@0.3.1)(eslint@9.22.0(jiti@2.4.2))(ioredis@5.6.0)(magicast@0.3.5)(optionator@0.9.3)(rollup@4.35.0)(sass@1.75.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.2(@types/node@20.12.7)(jiti@2.4.2)(sass@1.75.0)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
+      nuxt-umami:
+        specifier: ^3.2.0
+        version: 3.2.0(magicast@0.3.5)
       vue:
         specifier: 3.5.13
         version: 3.5.13(typescript@5.8.2)
@@ -5435,6 +5438,9 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
+  nuxt-umami@3.2.0:
+    resolution: {integrity: sha512-fqX5tX+2P/5J0fES3C7ykJP6H4bcP8fJzYZP7UcIW0ibwuLRbBzTRDdCd7gEkaXB0nABpSfKlCVInhMcIs07GA==}
+
   nuxt@3.16.0:
     resolution: {integrity: sha512-4j2tuHo+kcComQ1WrCD+i1w3UFOHrcnNH30cwiEY/WZZlBZOlC6DtUm6aBjhfpBFaMYsF4PbyKsNW+7FHwckHA==}
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0.0}
@@ -6297,6 +6303,9 @@ packages:
     resolution: {integrity: sha512-arB9d3ENdKva2fxRnSjwBEXfK1npgyci7ZZuwysgAp7ORjHSyxz6oqIjTEv8R0Ydl4Ll7uOAZXL4vbkhGIizCg==}
     engines: {node: '>=10'}
     hasBin: true
+
+  request-ip@3.3.0:
+    resolution: {integrity: sha512-cA6Xh6e0fDBBBwH77SLJaJPBmD3nWVAcF9/XAcsrIHdjhFzFiB5aNQFytdjCGPezU3ROwrR11IddKAM08vohxA==}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -13924,6 +13933,13 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
+  nuxt-umami@3.2.0(magicast@0.3.5):
+    dependencies:
+      '@nuxt/kit': 3.16.0(magicast@0.3.5)
+      request-ip: 3.3.0
+    transitivePeerDependencies:
+      - magicast
+
   nuxt@3.16.0(@parcel/watcher@2.5.1)(@types/node@20.12.7)(db0@0.3.1)(eslint@9.22.0(jiti@2.4.2))(ioredis@5.6.0)(magicast@0.3.5)(optionator@0.9.3)(rollup@4.35.0)(sass@1.75.0)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.2(@types/node@20.12.7)(jiti@2.4.2)(sass@1.75.0)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
       '@nuxt/cli': 3.23.0(magicast@0.3.5)
@@ -14981,6 +14997,8 @@ snapshots:
       chalk: 4.1.2
       glob: 7.2.3
       yargs: 17.7.2
+
+  request-ip@3.3.0: {}
 
   require-directory@2.1.1: {}
 
