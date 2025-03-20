@@ -1,11 +1,5 @@
 <template>
-    <ThemeController />
-
-    <main class="">
-        <div class="mx-auto max-w-screen-mobile">
-            <NuxtPage />
-        </div>
-    </main>
+    <NuxtPage />
 </template>
 
 <style>
