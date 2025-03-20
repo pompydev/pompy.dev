@@ -45,47 +45,49 @@ const t = useVueTable({
 <template>
     <Header highlight="Content creators" />
 
-    <h1 class="text-4xl font-black">
-        pomp's biased and opinionated list of Content creators
-    </h1>
-    <NuxtLink href="/" class="underline">Back</NuxtLink>
-    <div class="p-2">
-        <table class="border">
-            <thead>
-                <tr
-                    class="border"
-                    v-for="headerGroup in t.getHeaderGroups()"
-                    :key="headerGroup.id"
-                >
-                    <th
-                        class="border p-1"
-                        v-for="header in headerGroup.headers"
-                        :key="header.id"
-                        :colSpan="header.colSpan"
+    <Main>
+        <h1 class="text-4xl font-black">
+            pomp's biased and opinionated list of Content creators
+        </h1>
+        <NuxtLink href="/" class="underline">Back</NuxtLink>
+        <div class="p-2">
+            <table class="border">
+                <thead>
+                    <tr
+                        class="border"
+                        v-for="headerGroup in t.getHeaderGroups()"
+                        :key="headerGroup.id"
                     >
-                        <FlexRender
-                            v-if="!header.isPlaceholder"
-                            :render="header.column.columnDef.header"
-                            :props="header.getContext()"
-                        />
-                    </th>
-                </tr>
-            </thead>
+                        <th
+                            class="border p-1"
+                            v-for="header in headerGroup.headers"
+                            :key="header.id"
+                            :colSpan="header.colSpan"
+                        >
+                            <FlexRender
+                                v-if="!header.isPlaceholder"
+                                :render="header.column.columnDef.header"
+                                :props="header.getContext()"
+                            />
+                        </th>
+                    </tr>
+                </thead>
 
-            <tbody class="border">
-                <tr v-for="row in t.getRowModel().rows" :key="row.id">
-                    <td
-                        class="border p-1"
-                        v-for="cell in row.getVisibleCells()"
-                        :key="cell.id"
-                    >
-                        <FlexRender
-                            :render="cell.column.columnDef.cell"
-                            :props="cell.getContext()"
-                        />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                <tbody class="border">
+                    <tr v-for="row in t.getRowModel().rows" :key="row.id">
+                        <td
+                            class="border p-1"
+                            v-for="cell in row.getVisibleCells()"
+                            :key="cell.id"
+                        >
+                            <FlexRender
+                                :render="cell.column.columnDef.cell"
+                                :props="cell.getContext()"
+                            />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </Main>
 </template>
