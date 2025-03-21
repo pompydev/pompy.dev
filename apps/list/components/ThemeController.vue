@@ -16,7 +16,7 @@ const icon = computed(() => {
 </script>
 
 <template>
-    <div class="flex justify-end gap-2 p-2">
+    <div class="flex gap-2">
         <Icon :name="icon" size="32" />
 
         <select

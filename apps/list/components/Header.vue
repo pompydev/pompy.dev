@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const route = useRoute()
 const props = defineProps<{
     highlight: string
 }>()
@@ -7,7 +8,17 @@ const props = defineProps<{
 <template>
     <div class="slant-shadow">
         <div class="slant mb-12 bg-light-card-bg dark:bg-dark-card-bg">
-            <ThemeController class="h-12" />
+            <div class="flex justify-between p-2 pb-0">
+                <NuxtLink
+                    v-if="route.path !== '/'"
+                    href="/"
+                    class="flex aspect-square h-12 items-center justify-center rounded-full hover:bg-light-ui-hover dark:hover:bg-dark-ui-hover"
+                >
+                    <Icon name="material-symbols:home-rounded" size="32" />
+                </NuxtLink>
+                <div v-else></div>
+                <ThemeController class="h-12" />
+            </div>
 
             <h1
                 class="mb-12 text-center text-4xl leading-[3rem] text-slate-800 dark:text-slate-200"
