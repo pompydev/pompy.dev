@@ -17,7 +17,7 @@ const props = defineProps<{
                 <br />
                 list of
                 <span
-                    class="highlight px-1 font-extrabold text-light-text-default dark:text-dark-text-default"
+                    class="highlight whitespace-nowrap px-1 font-extrabold text-light-text-default dark:text-dark-text-default"
                 >
                     {{ props.highlight }}
                 </span>
