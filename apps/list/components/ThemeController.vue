@@ -1,23 +1,19 @@
 <script setup>
 const colorMode = useColorMode()
-
-const icon = computed(() => {
-    switch (colorMode.preference) {
-        case "system":
-            return "material-symbols:monitor-outline"
-        case "dark":
-            return "material-symbols:moon-stars-outline"
-        case "light":
-            return "material-symbols:sunny-outline-rounded"
-        default:
-            return "material-symbols:monitor-outline"
-    }
-})
 </script>
 
 <template>
-    <div class="flex gap-2">
-        <Icon :name="icon" size="32" />
+    <div class="flex items-center gap-2">
+        <Icon
+            class="block dark:hidden"
+            name="material-symbols:sunny-outline-rounded"
+            size="24"
+        />
+        <Icon
+            class="hidden dark:block"
+            name="material-symbols:moon-stars-outline"
+            size="24"
+        />
 
         <select
             v-model="colorMode.preference"
