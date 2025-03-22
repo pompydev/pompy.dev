@@ -16,6 +16,9 @@ export default defineNuxtConfig({
         head: {
             title, // default fallback title
             titleTemplate: `%s | ${title}`,
+            link: [
+                { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+            ],
             htmlAttrs: {
                 lang: "en",
             },
