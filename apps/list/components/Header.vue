@@ -24,14 +24,19 @@ const props = defineProps<{
                 class="mb-12 text-center text-4xl leading-[3rem] text-slate-800 dark:text-slate-200"
             >
                 <span class="font-semibold">pomp</span>'s<br />
-                biased & opinionated
-                <br />
-                list of
-                <span
-                    class="highlight whitespace-nowrap px-1 font-extrabold text-light-text-default dark:text-dark-text-default"
+                biased & opinionated list of
+                <div
+                    class="flex h-12 w-full flex-col items-center gap-8 overflow-hidden"
                 >
-                    {{ props.highlight }}
-                </span>
+                    <TransitionGroup name="slide-up">
+                        <span
+                            class="highlight font-extrabold text-light-text-default underline decoration-blue-400/75 decoration-[12px] underline-offset-[-6px] dark:text-dark-text-default dark:decoration-blue-600/75"
+                            :key="highlight"
+                        >
+                            &nbsp;{{ highlight }}&nbsp;
+                        </span>
+                    </TransitionGroup>
+                </div>
             </h1>
         </div>
     </div>
@@ -39,7 +44,6 @@ const props = defineProps<{
 
 <style scoped>
 .highlight {
-    @apply underline decoration-blue-400/75 decoration-[12px] underline-offset-[-6px] dark:decoration-blue-600/75;
     text-decoration-skip-ink: none;
 }
 
@@ -50,5 +54,20 @@ const props = defineProps<{
 
 .slant-shadow {
     filter: drop-shadow(0px 0px 20px #ccc);
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: all 0.2s ease-out;
+}
+
+.slide-up-enter-from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.slide-up-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
 }
 </style>

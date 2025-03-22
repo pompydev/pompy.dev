@@ -7,12 +7,15 @@ type Item = {
 
 const items: Item[] = [
     {
-        name: "Content Creators",
+        name: "Content creators",
         href: "/content-creators",
         thumbnail: "content-creators",
     },
 ]
 
+const highlight = ref("anything")
+
+// https://www.lichter.io/articles/nuxt3-vue3-dynamic-images/
 const glob = import.meta.glob("~/assets/thumbnail/*", { eager: true })
 const thumbnails = Object.fromEntries(
     Object.entries(glob).map(([key, value]) => [
@@ -23,12 +26,14 @@ const thumbnails = Object.fromEntries(
 </script>
 
 <template>
-    <Header highlight="anything" />
+    <Header :highlight="highlight" />
 
     <Main>
         <div class="flex gap-6">
             <Card
                 v-for="(item, _index) in items"
+                @mouseenter="highlight = item.name"
+                @mouseleave="highlight = 'anything'"
                 :key="item.href"
                 :href="item.href"
                 :name="item.name"
