@@ -2,6 +2,7 @@
 const props = defineProps<{
     href: string
     name: string
+    thumbnail: string
 }>()
 
 // See https://inclusive-components.design/cards/
@@ -14,7 +15,7 @@ const props = defineProps<{
         <div
             class="flex h-32 items-center justify-center rounded-t-lg dark:bg-dark-ui"
         >
-            <slot />
+            <img :src="$props.thumbnail" class="rounded-t-lg" />
         </div>
         <div class="p-4">
             <NuxtLink
