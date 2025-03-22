@@ -16,10 +16,13 @@ const items: Item[] = [
 const highlight = ref("anything")
 
 // https://www.lichter.io/articles/nuxt3-vue3-dynamic-images/
-const glob = import.meta.glob("~/assets/thumbnail/*", { eager: true })
+const glob: Record<string, { default: string }> = import.meta.glob(
+    "~/assets/thumbnail/*",
+    { eager: true },
+)
 const thumbnails = Object.fromEntries(
     Object.entries(glob).map(([key, value]) => [
-        key.split("/").pop().split(".")[0],
+        key.split("/").pop()!.split(".")[0],
         value.default,
     ]),
 )
