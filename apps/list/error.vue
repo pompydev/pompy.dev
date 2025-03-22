@@ -4,6 +4,8 @@ import type { NuxtError } from "#app"
 const props = defineProps({
     error: Object as () => NuxtError,
 })
+
+useHead({ title: props.error?.statusCode })
 </script>
 
 <template>
