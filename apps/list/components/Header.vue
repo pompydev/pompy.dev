@@ -9,15 +9,25 @@ const props = defineProps<{
     <div class="slant-shadow">
         <div class="slant mb-12 bg-light-card-bg dark:bg-dark-card-bg">
             <div class="flex justify-between p-2 pb-0">
-                <NuxtLink
-                    v-if="route.path !== '/'"
-                    href="/"
-                    class="flex aspect-square h-12 items-center justify-center rounded-full hover:bg-light-ui-hover dark:hover:bg-dark-ui-hover"
-                >
-                    <Icon name="material-symbols:home-rounded" size="32" />
-                </NuxtLink>
-                <div v-else></div>
-                <ThemeController class="h-12" />
+                <div>
+                    <NuxtLink
+                        v-if="route.path !== '/'"
+                        href="/"
+                        class="flex aspect-square h-12 items-center justify-center rounded-full hover:bg-light-ui-hover dark:hover:bg-dark-ui-hover"
+                    >
+                        <Icon name="material-symbols:home-rounded" size="32" />
+                    </NuxtLink>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a
+                        class="flex items-center justify-center p-2 text-gray-600 hover:text-light-text-high-contrast dark:text-dark-header-text dark:hover:text-dark-text-high-contrast"
+                        href="https://github.com/pompydev/pompy.dev/tree/master/apps/list"
+                        target="_blank"
+                    >
+                        <Icon name="fa6-brands:github" size="24" />
+                    </a>
+                    <ThemeController class="h-12" />
+                </div>
             </div>
 
             <h1

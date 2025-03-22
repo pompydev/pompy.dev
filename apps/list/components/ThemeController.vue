@@ -4,16 +4,8 @@ const colorMode = useColorMode()
 
 <template>
     <div class="flex items-center gap-2">
-        <Icon
-            class="block dark:hidden"
-            name="material-symbols:sunny-outline-rounded"
-            size="24"
-        />
-        <Icon
-            class="hidden dark:block"
-            name="material-symbols:moon-stars-outline"
-            size="24"
-        />
+        <Icon class="block dark:hidden" name="akar-icons:sun-fill" size="24" />
+        <Icon class="hidden dark:block" name="akar-icons:moon-fill" size="24" />
 
         <select
             v-model="colorMode.preference"
