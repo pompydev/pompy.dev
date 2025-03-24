@@ -5,8 +5,7 @@
     "scripts": {
         "dev": "nodemon -e md --watch markdown --exec pnpm build",
         "lint": "oxlint && eslint .",
-        "build": "rm -rf dist build && tsup && node build/index.js",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo build dist node_modules"
+        "build": "rm -rf dist build && tsup && node build/index.js"
     },
     "dependencies": {
         "@microflash/remark-callout-directives": "^4.1.0",

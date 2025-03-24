@@ -9,8 +9,7 @@
         "lint": "oxlint && eslint .",
         "build": "vite build",
         "test:unit": "TZ=UTC jest",
-        "test:e2e": "playwright test",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo .svelte-kit test-results build node_modules vite.config.ts.timestamp-*"
+        "test:e2e": "playwright test"
     },
     "dependencies": {
         "@sveltejs/vite-plugin-svelte": "^3.1.0"

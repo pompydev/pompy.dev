@@ -8,8 +8,7 @@
         "lint": "oxlint && eslint .",
         "build": "next build",
         "postbuild": "next-sitemap && cp ../../packages/content/dist/rss.xml public/rss.xml",
-        "test:e2e": "playwright test",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .next .turbo build node_modules test-results"
+        "test:e2e": "playwright test"
     },
     "devDependencies": {
         "@pompydev/content": "workspace:*",

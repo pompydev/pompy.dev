@@ -4,8 +4,7 @@
     "type": "module",
     "main": "eslint.config.mjs",
     "scripts": {
-        "lint": "oxlint && eslint eslint.config.mjs",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo node_modules"
+        "lint": "oxlint && eslint eslint.config.mjs"
     },
     "devDependencies": {
         "@eslint/js": "9.22.0",

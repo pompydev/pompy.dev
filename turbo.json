@@ -21,9 +21,6 @@
         },
         "lint": {
             "cache": false
-        },
-        "i_am_sure_i_want_to_nuke_gitignored_files": {
-            "cache": false
         }
     }
 }

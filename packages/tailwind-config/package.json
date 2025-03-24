@@ -8,8 +8,7 @@
         "tailwind.config.js"
     ],
     "scripts": {
-        "lint": "oxlint && eslint .",
-        "i_am_sure_i_want_to_nuke_gitignored_files": "rm -rf .turbo node_modules"
+        "lint": "oxlint && eslint ."
     },
     "devDependencies": {
         "tailwindcss": "^3.4.0"
