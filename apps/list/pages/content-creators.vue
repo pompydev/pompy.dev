@@ -3,7 +3,9 @@ import {
     FlexRender,
     getCoreRowModel,
     useVueTable,
+    type SortingState,
     createColumnHelper,
+    getSortedRowModel,
 } from "@tanstack/vue-table"
 
 useHead({
@@ -15,16 +17,27 @@ type ContentCreator = {
     name: string
     subscribers: number
 }
-const _contentCreators: ContentCreator[] = [
+const contentCreators = ref([
     {
         channelId: "asdf",
         name: "Channel A",
         subscribers: 9999,
     },
-]
+    {
+        channelId: "xyzw",
+        name: "Channel B",
+        subscribers: 1111,
+    },
+])
 
+function sortIcon(isSorted: false | "asc" | "desc") {
+    if (isSorted === "asc") return "fa6-solid:sort-up"
+    if (isSorted === "desc") return "fa6-solid:sort-down"
+    return "fa6-solid:sort"
+}
+
+const sorting = ref<SortingState>([])
 const columnHelper = createColumnHelper<ContentCreator>()
-const contentCreators = ref(_contentCreators)
 const t = useVueTable({
     get data() {
         return contentCreators.value
@@ -38,7 +51,19 @@ const t = useVueTable({
             header: "Subscribers",
         }),
     ],
+    state: {
+        get sorting() {
+            return sorting.value
+        },
+    },
+    onSortingChange: (updaterOrValue) => {
+        sorting.value =
+            typeof updaterOrValue === "function"
+                ? updaterOrValue(sorting.value)
+                : updaterOrValue
+    },
     getCoreRowModel: getCoreRowModel(),
+    getSortedRowModel: getSortedRowModel(),
 })
 </script>
 
@@ -55,16 +80,29 @@ const t = useVueTable({
                         :key="headerGroup.id"
                     >
                         <th
-                            class="border p-1"
+                            class="cursor-pointer border p-1"
                             v-for="header in headerGroup.headers"
                             :key="header.id"
                             :colSpan="header.colSpan"
+                            @click="
+                                header.column.getToggleSortingHandler()?.(
+                                    $event,
+                                )
+                            "
                         >
-                            <FlexRender
-                                v-if="!header.isPlaceholder"
-                                :render="header.column.columnDef.header"
-                                :props="header.getContext()"
-                            />
+                            <div class="flex items-center justify-center gap-1">
+                                <FlexRender
+                                    v-if="!header.isPlaceholder"
+                                    :render="header.column.columnDef.header"
+                                    :props="header.getContext()"
+                                />
+                                <Icon
+                                    :name="
+                                        sortIcon(header.column.getIsSorted())
+                                    "
+                                    size="24"
+                                />
+                            </div>
                         </th>
                     </tr>
                 </thead>
